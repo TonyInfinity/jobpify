@@ -44,7 +44,7 @@
           <div class="control">
             <label for="job[remote_ok]">
               <%= f.input :remote_ok, required: false, input_html: { class: "checkbox"}, wrapper: false, label: false %>
-              Công việc có thể làm từ mọi nơi
+              Remote
             </label><i class="fa fa-wifi"></i>
           </div>
         </div>
@@ -71,8 +71,23 @@
     <div class="columns">
       <div class="field column">
         <div class="control">
-          <%= f.label "Hạn chót ứng tuyển", class: "label", wrapper: false, required: true %>
+          <%= f.label "Hạn ứng tuyển", class: "label", wrapper: false, required: true %>
           <%= f.date_select :job_deadline, {order: [:day, :month, :year], prompt: { day: 'Chọn ngày', month: 'Chọn tháng', year: 'Chọn năm' }, start_year: Date.today.year, end_year: Date.today.year + 25}, {class: "select is-hovered", required: true}  %>
+        </div>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="field column">
+        <div class="control">
+          <label class="label">Chọn mức lương</label>
+          <div class="control has-icons-left">
+            <span class="select is-fullwidth">
+              <%= f.input_field :job_salary, required: true, collection: User::JOB_SALARY, prompt: "Mức lương:" %>
+            </span>
+            <span class="icon is-small is-left">
+              <i class="fa fa-briefcase"></i>
+            </span>
+          </div>
         </div>
       </div>
     </div>

@@ -7,10 +7,11 @@
     <h1 class="title is-2"><%= @job.title %></h1>
     <div class="panel">
       <li class="inline-block f6 pr2"><%= job_type(@job.job_type) %></li>
-      <li class="inline-block f6 pr2"><i class="fa fa-calendar"></i> Hạn chót ứng tuyển: <%= @job.job_deadline.to_date %></li>
+      <li class="inline-block f6 pr2"><i class="fa fa-calendar"></i> Hạn ứng tuyển: <%= @job.job_deadline.to_date %></li>
       <li class="inline-block f6 ph2"><i class="fa fa-map-marker"></i> Khu vực: <%= @job.location %></li>
+       <li class="inline-block f6 ph2"><i class="fa fa-usd"></i> Lương: <%= @job.job_salary %></li>
       <% if @job.remote_ok? %>
-        <li class="inline-block f6 ph2"><i class="fa fa-wifi"></i> Công việc có thể làm từ mọi nơi</li>
+        <li class="inline-block f6 ph2"><i class="fa fa-wifi"></i> Remote</li>
       <% end %>
     </div>
     <div class="content text-serif f4">

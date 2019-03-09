@@ -17,6 +17,14 @@
               </span>
           </div>
           </form>
+          <a class="button is-small" href="/jobs">
+            <span class="icon"><i class="fa fa-trash"></i></span>
+            <span>Reset bộ lọc</span>
+          </a>
+          <a class="button is-small">
+            <span class="icon"><i class="fa fa-wifi"></i></span>
+            <span>Remote only</span>
+          </a>
           </div>
           </div>
       </div>
@@ -29,7 +37,7 @@
         <% end %>
       </div>
       <div class="column is-8">
-        <h3 class="title is-4 index-title"><%= link_to job.title, job %></h3>
+        <h3 class="title is-4 index-title"><%= link_to job.title, job %><% if job.remote_ok? %><li class="inline-block f6 ph2"><i class="fa fa-wifi"></i></li><% end %></h3>
           <ul>
             <li><p class="subtitle is-6 has-text-link"><%= job.job_author %></p></li>
           </ul>
@@ -60,6 +68,7 @@
           <%= job_type(job.job_type) %>
           <p class="pt2 f6"><i class="fa fa-map-marker"></i> <%= job.location %></p>
           <p class="pt2 f6"><i class="fa fa-calendar"></i> <%= job.job_deadline.to_date %></p>
+          <p class="pt2 f6"><i class="fa fa-usd"></i> <%= job.job_salary %></p>
         </div>
       </div>
     <% end %>
