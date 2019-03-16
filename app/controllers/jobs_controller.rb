@@ -9,12 +9,15 @@ class JobsController < ApplicationController
       @jobs = Job.where(location: params[:location]).order("created_at desc")
     elsif (params.has_key?(:search))
       @jobs = Job.search(params[:search])
+    elsif (params.has_key?(:job_salary))
+      @jobs = Job.where(job_salary: params[:job_salary]).order("created_at desc")
     else
       @jobs = Job.all.order("created_at desc")
     end
   end
 
   def show
+    redirect_to new_user_session_path, alert: "Bạn cần đăng nhập để có thể xem nội dung đầy đủ của bài tuyển dụng" unless current_user
     @jobs = Job.all.order("created_at desc")
     @jobs_by_same_author = Job.where('job_author = ?', @job.job_author).order("created_at desc")
     @users = User.all

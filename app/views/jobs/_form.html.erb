@@ -69,6 +69,19 @@
       </div>
     </div>
     <div class="columns">
+      <div class="field column is-4">
+        <div class="control">
+          <%= f.label "Chọn mức lương", class: "label", wrapper: false, required: true %>
+          <div class="control has-icons-left">
+            <span class="select">
+              <%= f.input_field :job_salary, required: true, collection: User::JOB_SALARY, prompt: "Mức lương:" %>
+            </span>
+            <span class="icon is-small is-left">
+              <i class="fa fa-usd"></i>
+            </span>
+          </div>
+        </div>
+      </div>
       <div class="field column">
         <div class="control">
           <%= f.label "Hạn ứng tuyển", class: "label", wrapper: false, required: true %>
@@ -76,21 +89,7 @@
         </div>
       </div>
     </div>
-    <div class="columns">
-      <div class="field column">
-        <div class="control">
-          <label class="label">Chọn mức lương</label>
-          <div class="control has-icons-left">
-            <span class="select is-fullwidth">
-              <%= f.input_field :job_salary, required: true, collection: User::JOB_SALARY, prompt: "Mức lương:" %>
-            </span>
-            <span class="icon is-small is-left">
-              <i class="fa fa-briefcase"></i>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
+    
     <div class="columns">
       <div class="field column">
         <div class="control">

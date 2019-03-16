@@ -83,12 +83,12 @@
 </nav>-->
 <nav class="panel" style="padding-top:10px">
 <p class="panel-heading">Mức lương:</p>
-<%= link_to 'Từ 1 triệu', jobs_path, class: "panel-block" %>
-<%= link_to 'Từ 2 triệu', jobs_path, class: "panel-block" %>
-<%= link_to 'Từ 5 triệu', jobs_path, class: "panel-block" %>
-<%= link_to 'Từ 10 triệu', jobs_path, class: "panel-block" %>
-<%= link_to 'Từ 20 triệu', jobs_path, class: "panel-block" %>
-<%= link_to 'Thương lượng', jobs_path, class: "panel-block" %>
+<%= link_to 'Từ 1 triệu', jobs_path(job_salary: "Từ 1 triệu"), class: "panel-block" %>
+<%= link_to 'Từ 2 triệu', jobs_path(job_salary: "Từ 2 triệu"), class: "panel-block" %>
+<%= link_to 'Từ 5 triệu', jobs_path(job_salary: "Từ 5 triệu"), class: "panel-block" %>
+<%= link_to 'Từ 10 triệu', jobs_path(job_salary: "Từ 10 triệu"), class: "panel-block" %>
+<%= link_to 'Từ 20 triệu', jobs_path(job_salary: "Từ 20 triệu"), class: "panel-block" %>
+<%= link_to 'Thương lượng', jobs_path(job_salary: "Thương lượng"), class: "panel-block" %>
 </nav>
 
 <div class="control has-icons-left">
