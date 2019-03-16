@@ -15,5 +15,5 @@ Rails.application.routes.draw do
   get '/recruiters-faq' => 'pages#recruiters-faq'
   get '/terms-of-service' => 'pages#terms-of-service'
   get '/employer/dashboard' => 'jobs#dashboard'
-  get '/jobpy-search' => 'pages#jobpy-search'
+  get '/jobpify-search' => 'pages#jobpify-search'
 end
