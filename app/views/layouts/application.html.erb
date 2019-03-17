@@ -21,12 +21,11 @@
       <p class="alert"><%= alert %></p>
     </div>
     <% end %>
-     <nav class="navbar has-background-white" role="navigation" aria-label="main navigation"  style="border-bottom:1px dashed #D3D3D3">
+     <nav class="navbar has-background-white" role="navigation" aria-label="main navigation" style="border-bottom:1px dashed #D3D3D3">
       <div class="navbar-brand">
-        <div class="navbar-item has-dropdown is-hoverable">
+        <div class="navbar-item has-dropdown is-hoverable" style="border-right:1px dashed #D3D3D3">
             <%= link_to root_path, class: "navbar-link" do %>
-            <img src="/images/logo_transparent_cropped.png" alt="rss feed" style="padding-right:5px" />
-              <h1 class="title is-5"><%= Rails.configuration.application_name %></h1>
+            <img src="/images/logo_transparent_cropped.png" alt="rss feed" />
             <% end %>
                 <div class="navbar-dropdown">
                   <a class="navbar-item" href="/jobpify-search">
@@ -87,7 +86,7 @@
             <% if current_user.employer? %>
             <div class="navbar-item">
               <p class="control">
-                <%= link_to "Đăng bài tuyển dụng mới", new_job_path, class: "navbar-item button is-rounded" %>
+                <%= link_to "Đăng bài tuyển dụng mới", new_job_path, class: "navbar-item button" %>
               </p>
             </div>
               <a class="navbar-item" href="/conversations/">Phỏng vấn</a>
@@ -103,7 +102,7 @@
               <% else %>
               <div class="navbar-item">
               <p class="control">
-                <a class="navbar-item button is-rounded" href="/foren/">Đặt câu hỏi</a>
+                <a class="navbar-item button" href="/foren/">Đặt câu hỏi</a>
               </p>
               </div>
               <a class="navbar-item" href="/library/">Thư viện</a>
@@ -120,12 +119,12 @@
             <% else %>
             <div class="navbar-item">
               <p class="control">
-                <%= link_to "Đăng bài tuyển dụng mới", new_user_session_path, class: "navbar-item button is-rounded" %>
+                <%= link_to "Đăng bài tuyển dụng mới", new_user_session_path, class: "navbar-item button" %>
               </p>
           </div>
           <div class="navbar-item">
               <p class="control">
-                <%= link_to "Đặt câu hỏi", new_user_session_path, class: "navbar-item button is-rounded" %>
+                <%= link_to "Đặt câu hỏi", new_user_session_path, class: "navbar-item button" %>
               </p>
               </div>
             <div class="navbar-item">
