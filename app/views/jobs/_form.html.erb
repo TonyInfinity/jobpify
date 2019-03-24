@@ -15,10 +15,10 @@
     <div class="columns">
       <div class="field column is-4">
         <div class="control">
-          <label class="label">Chọn loại công việc</label>
+          <%= f.label "Chọn hình thức:", class: "label", wrapper: false, required: true %>
           <div class="control has-icons-left">
             <span class="select is-fullwidth">
-              <%= f.input_field :job_type, required: true, collection: User::JOB_TYPES, prompt: "Loại công việc:" %>
+              <%= f.input_field :job_type, required: true, collection: User::JOB_TYPES, prompt: "Hình thức:" %>
             </span>
             <span class="icon is-small is-left">
               <i class="fa fa-briefcase"></i>
@@ -29,13 +29,13 @@
       <div class="column">
         <div class="field">
           <div class="control">
-            <label class="label">Chọn khu vực</label>
+            <%= f.label "Chọn khu vực", class: "label", wrapper: false, required: true %>
           <div class="control has-icons-left">
             <span class="select is-fullwidth">
               <%= f.input_field :location, required: true, collection: User::JOB_LOCATIONS, prompt: "Khu vực:" %>
             </span>
             <span class="icon is-small is-left">
-              <i class="fa fa-globe"></i>
+              <i class="fa fa-map-marker"></i>
             </span>
           </div>
           </div>
@@ -73,7 +73,7 @@
         <div class="control">
           <%= f.label "Chọn mức lương", class: "label", wrapper: false, required: true %>
           <div class="control has-icons-left">
-            <span class="select">
+            <span class="select is-fullwidth">
               <%= f.input_field :job_salary, required: true, collection: User::JOB_SALARY, prompt: "Mức lương:" %>
             </span>
             <span class="icon is-small is-left">
@@ -90,13 +90,42 @@
       </div>
     </div>
     
+    <!-- WIP -->
+    <div class="columns">
+      <div class="field column is-4">
+        <div class="control">
+          <%= f.label "Chọn giới tính", class: "label", wrapper: false, required: true %>
+          <div class="control has-icons-left">
+            <span class="select is-fullwidth">
+            </span>
+            <span class="icon is-small is-left">
+              <i class="fa fa-user"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+        <div class="field column">
+         <div class="control">
+          <%= f.label "Chọn trình độ", class: "label", wrapper: false, required: true %>
+          <div class="control has-icons-left">
+            <span class="select is-fullwidth">
+            </span>
+            <span class="icon is-small is-left">
+              <i class="fa fa-graduation-cap"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- WIP -->
+    
     <div class="columns">
       <div class="field column">
         <div class="control">
-          <%= f.label "Logo", required: true, class: "label", wrapper: false %>
+          <%= f.label "Logo", class: "label", wrapper: false %>
           <div class="file has-name is-fullwidth">
             <label class="file-label">
-              <%= f.input :avatar, as: :file, required: true, input_html: { class: "file-input job-avatar" }, label: false, wrapper: false %>
+              <%= f.input :avatar, as: :file, input_html: { class: "file-input job-avatar" }, label: false, wrapper: false %>
                 <span class="file-cta">
                   <span class="file-icon"><i class="fa fa-upload"></i></span>
                   <span class="file-label">Chọn tệp ...</span>
@@ -117,7 +146,7 @@
       <div class="field column">
         <label class="checkbox">
           <input type="checkbox" checked>
-            Tôi đồng ý với <a href="/terms-of-service/">điều khoản dịch vụ và chính sách bảo mật</a> của Jobpify
+            Tôi đồng ý với <a href="/terms-of-service">điều khoản dịch vụ và chính sách bảo mật</a> của Jobpify
         </label>
       </div>
     </div>

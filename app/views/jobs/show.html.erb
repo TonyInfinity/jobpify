@@ -2,10 +2,12 @@
   <div class="column is-7 is-offset-1">
     <a class="button" href="/jobs/"><i class="fa fa-arrow-left"></i></a><br><br>
     <div class="box">
+      <div id="div-to-print">
     <!--<p class="f7"><i class="fa fa-clock"></i> Được đăng <%= time_ago_in_words(@job.created_at) %> trước</p>-->
     <p class="f7"><i class="fa fa-clock"></i> Được đăng vào ngày <%= @job.created_at.strftime("%d-%m-%Y") %></p>
     <h1 class="title is-2"><%= @job.title %></h1>
     <div class="panel">
+      <li class="inline-block f6 pr2"><span class="tag is-dark">Đại học</span></li>
       <li class="inline-block f6 pr2"><%= job_type(@job.job_type) %></li>
       <li class="inline-block f6 pr2"><i class="fa fa-calendar"></i> Hạn ứng tuyển: <%= @job.job_deadline.to_date %></li>
       <li class="inline-block f6 ph2"><i class="fa fa-map-marker"></i> Khu vực: <%= @job.location %></li>
@@ -17,22 +19,29 @@
     <div class="content text-serif f4">
       <%= sanitize @job.description %>
     </div>
+    </div>
     <hr />
     <div class="control has-text-centered">
     <%= link_to 'Ứng tuyển công việc này', @job.apply_url, class: "button is-danger is-large is-rounded mv4" %>
     </div>
   </div>
+  <a class="button" onclick="printElem()">
+    <span class="icon">
+      <i class="fa fa-print"></i>
+    </span>
+    <span>In bài tuyển dụng</span>
+  </a>
   <a class="button">
     <span class="icon">
       <i class="fa fa-bookmark"></i>
     </span>
-    <span>Lưu công việc này vào thư viện</span>
+    <span>Lưu bài tuyển dụng vào thư viện</span>
   </a>
   <a class="button" href="javascript:shareOnFacebook()">
     <span class="icon">
       <i class="fa fa-facebook"></i>
     </span>
-    <span>Chia sẻ công việc này trên Facebook</span>
+    <span>Chia sẻ bài tuyển dụng trên Facebook</span>
   </a>
   <hr />
   <div class="box">

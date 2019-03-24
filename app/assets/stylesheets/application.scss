@@ -65,3 +65,11 @@ textarea {
 .button {
   border-radius: 0;
 }
+.disable-this {
+  pointer-events: none;
+  cursor: block;
+  user-select: none;
+}
+.dropdown-content {
+  border-radius: 0;
+}

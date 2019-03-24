@@ -17,19 +17,10 @@
               </span>
           </div>
           </form>
-          <a class="button is-small" href="/jobs">
-            <span class="icon"><i class="fa fa-minus-square"></i></span>
-            <span>Reset bộ lọc</span>
-          </a>
-          <a class="button is-small">
-            <span class="icon"><i class="fa fa-wifi"></i></span>
-            <span>Chỉ việc làm remote</span>
-          </a>
-
-         <!--<div class="dropdown is-hoverable">
+         <div class="dropdown is-hoverable">
           <div class="dropdown-trigger">
             <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
-              <span>Giới tính</span>
+              <span>Sắp xếp theo:</span>
               <span class="icon is-small">
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
               </span>
@@ -38,15 +29,25 @@
           <div class="dropdown-menu is-small" id="dropdown-menu" role="menu">
             <div class="dropdown-content">
               <a href="#" class="dropdown-item">
-                Nam
+                Được đăng trong hôm nay
               </a>
               <a href="#" class="dropdown-item">
-                Nữ
+                Được đăng trong tuần này
+              </a>
+              <a href="#" class="dropdown-item">
+                Được đăng trong tháng này
+              </a>
+              <a href="#" class="dropdown-item">
+                Có nhiều sao nhất
+              </a>
+              <a href="#" class="dropdown-item">
+                Có ít sao nhất
               </a>
             </div>
           </div>
-        </div> -->
+        </div> 
     
+   <!-- <div class="control has-icons-left">
           <div class="select is-small">
             <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value)">
             <option selected>Giới tính: Tất cả</option>
@@ -54,12 +55,31 @@
             <option value="#">Giới tính: Nữ</option>
             </select>
           </div>
-      
+          <span class="icon is-small is-left">
+          <i class="fa fa-user"></i>
+          </span>
+      </div> -->
 
+      <div style="float:right">
+        <label class="radio">
+          <input type="radio" name="remote">
+          Chỉ việc làm từ xa
+        </label>
+        <label class="radio">
+          <input type="radio" name="gender">
+          Nam
+        </label>
+        <label class="radio">
+          <input type="radio" name="gender">
+          Nữ
+        </label>
+        </div>
+        
           </div>
           </div>
       </div>
       </section>
+      <div class="columns border-bottom pt2"></div>
     <% @jobs.each do |job| %>
     <div class="columns border-bottom pt2">
       <div class="column is-1">
@@ -79,34 +99,34 @@
           <ul class="pv3">
             <li class="inline-block f6">Quyền của người đăng: </li>
             <li class="inline-block">
-              <!--<%= link_to 'Xem', job, class: 'button is-small is-outlined' %></li>-->
               <%= link_to raw("<span class=\"icon is-small\"><i class=\"fa fa-eye\"></i></span>"), job, class: "button is-small is-outlined" %></li>
-              
             <li class="inline-block">
-              <!--<%= link_to 'Chỉnh sửa', edit_job_path(job), class: 'button is-small is-outlined' %></li>-->
               <%= link_to raw("<span class=\"icon is-small\"><i class=\"fa fa-pencil\"></i></span>"), edit_job_path(job), class: "button is-small is-outlined" %></li>
-              
             <li class="inline-block">
-              <!--<%= link_to 'Xóa', job, method: :delete, data: { confirm: 'Bạn có chắc là muốn xóa công việc này?' }, class: 'button is-small is-outlined' %></li>-->
               <%= link_to raw("<span class=\"icon is-small\"><i class=\"fa fa-trash\"></i></span>"), job, method: "delete", data: { confirm: 'Bạn có chắc là muốn xóa công việc này?'}, class: "button is-small is-outlined" %></li>
-              
             <li class="inline-block">
-              <%= link_to 'Mở trong tab mới', job, class: 'button is-small is-outlined', target: :_blank %></li>
-            <% else %> 
+              <%= link_to raw("<span class=\"icon is-small\"><i class=\"fa fa-external-link-square\"></i></span>"), job, target: :_blank, class: "button is-small is-outlined" %></li>
+          <% else %> 
+            <li class="inline-block f6">Quyền của người xem: </li>
             <li class="inline-block">
-              <%= link_to 'Mở trong tab mới', job, class: 'button is-small is-outlined', target: :_blank %></li>
+              <%= link_to raw("<span class=\"icon is-small\"><i class=\"fa fa-external-link-square\"></i></span>"), job, target: :_blank, class: "button is-small is-outlined" %></li>
             </ul>
             <li class="inline-block">
-              <%= link_to 'Lưu vào thư viện', new_user_session_path, class: 'button is-small is-outlined', target: :_blank %></li>
+             <%= link_to raw("<span class=\"icon is-small\"><i class=\"fa fa-bookmark\"></i></span>"), new_user_session_path, class: "button is-small is-outlined" %></li>
+            <li class="inline-block">
+             <%= link_to raw("<span class=\"icon is-small\"><i class=\"fa fa-star\"></i></span>"), new_user_session_path, class: "button is-small is-outlined" %></li>
             </ul>
         <% end %>
         </div>
+        
         <div class="column has-text-right">
-          <%= job_type(job.job_type) %>
+              <span class="tag is-dark">Đại học</span>
+            <%= job_type(job.job_type) %>
           <p class="pt2 f6"><i class="fa fa-map-marker"></i> <%= job.location %></p>
           <p class="pt2 f6"><i class="fa fa-calendar"></i> <%= job.job_deadline.to_date %></p>
           <p class="pt2 f6"><i class="fa fa-usd"></i> <%= job.job_salary %></p>
         </div>
+      
       </div>
     <% end %>
   </div>
