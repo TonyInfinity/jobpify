@@ -1,9 +1,7 @@
-<section class="hero has-background-white">
+<section class="hero has-background-white" style="padding-left:100px;padding-right:100px">
       <div class="hero-body">
-        <div class="card">
-          <div class="card-content has-text-centered">
             <form class="field">
-                <p class="subtitle is-3 has-text-grey" style="display:inline-block;vertical-align:middle">Jobpy Search</p>
+                <p class="subtitle is-3 has-text-grey" style="display:inline-block;vertical-align:middle"><b>Cơ sở dữ liệu việc làm từ Internet. Cập nhật liên tục.</b></p>
                   <div class="control has-icons-left has-icons-right search-field">
               <input class="input is-medium is-hovered" id="search-box" type="text" placeholder="Tìm theo tên công việc" name="search" v-model="search" /><span class="icon is-medium is-left"><i class="fa fa-briefcase"></i></span>                  
               <span class="icon is-medium is-right">
@@ -12,32 +10,79 @@
           </div>
           </form>
         <a class="button is-medium" onclick="searchValue()">
-            <span>Tìm kiếm cùng Jobpy</span>
+            <span>Tìm kiếm cùng Jobpify</span>
             <span class="icon">
               <i class="fa fa-search"></i>
             </span>
         </a>
-          </div>
-          </div>
-      </div>
-    <p class="subtitle is-6 has-text-right" style="padding-right:10px;padding-bottom:5px"><i>Tìm kiếm trên 1000000 công việc</i></p>
-      </section>
-   <div class="box has-background-white">
-       <div class="list is-hoverable">
-           <a class="list-item" href="#">
-               Liên hệ jobpy.marketing@gmail.com để đưa quảng cáo/công việc của bạn lên đây
-           </a> 
-           <a class="list-item" href="#">
-               Liên hệ jobpy.marketing@gmail.com để đưa quảng cáo/công việc của bạn lên đây
-           </a> 
-           <a class="list-item" href="#">
-               Liên hệ jobpy.marketing@gmail.com để đưa quảng cáo/công việc của bạn lên đây
-           </a> 
-       </div>
+    </div>
+    <!--<p class="subtitle is-6 has-text-right" style="padding-right:10px;padding-bottom:5px"><i>Tìm kiếm trên 1000000 công việc</i></p>-->
        <div class="list is-hoverable" id="resultDiv">
            <p id="noResult" style="display:none">HEY</p>
        </div>
    </div>
+   
+   <div class="columns">
+  <div class="column is-one-third">
+      <p class="has-text-grey">Vietnamworks</p>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+  </div>
+  <div class="column">
+        <p class="has-text-grey">Vieclam24h</p>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+  </div>
+  <div class="column">
+        <p class="has-text-grey">TopCV</p>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+  </div>
+    </div>
+    
+    <div class="columns">
+  <div class="column is-one-third">
+      <p class="has-text-grey">CareerLink</p>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+  </div>
+  <div class="column">
+        <p class="has-text-grey">JobStreet</p>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+  </div>
+  <div class="column">
+        <p class="has-text-grey">Ybox</p>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+      <a class="list-item has-text-black" href="#">Blah blah blah blah blah blah blah blah blah blah blah blah blah</a>
+  </div>
+    </div>
+    
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 <script>
 $.getJSON('search-engine.js');
 </script>

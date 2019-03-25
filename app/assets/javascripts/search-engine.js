@@ -6,7 +6,7 @@ function searchValue() {
   //$('#search-box').toggle(shouldToggle);
   let srchVal = data.filter(val => val.name.toLowerCase().includes(searchFieldLower))
   srchVal.forEach((item) => {
-    srchString += `<a class="list-item" href="${item.url}">${item.name}</a>`
+    srchString += `<a class="list-item" href="${item.url}">${item.name}<br><p class="has-text-black" style="font-size:12px">${item.url}</p></a>`
   })
   $('#resultDiv').empty().append(srchString)
   if (srchVal == 0) {
