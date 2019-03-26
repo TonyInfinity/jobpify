@@ -5,10 +5,6 @@
 @import "jobs";
 @import "stripe";
 
-/*body {
-  font-family: 'Nunito', sans-serif;
-}*/
-
 .has-background-cloud {
   background-color: hsl(0, 0%, 95%);
 }
@@ -80,4 +76,8 @@ textarea {
 .list-item:hover {
   border-radius: 0;
   background-color: grey;
+}
+.card {
+  box-shadow: none;
+  border: 1px solid #d3d3d3;
 }

@@ -79,6 +79,7 @@
           </div>
       </div>
       </section>
+      
       <div class="columns border-bottom pt2"></div>
     <% @jobs.each do |job| %>
     <div class="columns border-bottom pt2">
@@ -120,12 +121,19 @@
         </div>
         
         <div class="column has-text-right">
+          <div class="control" style="padding:0;float:right">
+          <div class="tags has-addons">
               <span class="tag is-dark">Đại học</span>
             <%= job_type(job.job_type) %>
+            </div>
+            </div>
+            <div class="control" style="padding:0;float:right">
           <p class="pt2 f6"><i class="fa fa-map-marker"></i> <%= job.location %></p>
           <p class="pt2 f6"><i class="fa fa-calendar"></i> <%= job.job_deadline.to_date %></p>
           <p class="pt2 f6"><i class="fa fa-usd"></i> <%= job.job_salary %></p>
+          </div>
         </div>
+
       
       </div>
     <% end %>
