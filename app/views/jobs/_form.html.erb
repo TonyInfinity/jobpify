@@ -90,7 +90,7 @@
       </div>
     </div>
     
-    <!-- WIP -->
+    <!--
     <div class="columns">
       <div class="field column is-4">
         <div class="control">
@@ -117,7 +117,35 @@
         </div>
       </div>
     </div>
-    <!-- WIP -->
+    WIP -->
+    
+    <div class="columns">
+      <div class="field column is-4">
+        <div class="control">
+          <%= f.label "Chọn giới tính", class: "label", wrapper: false, required: true %>
+          <div class="control has-icons-left">
+            <span class="select is-fullwidth">
+            </span>
+            <span class="icon is-small is-left">
+              <i class="fa fa-user"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+        <div class="field column">
+         <div class="control">
+          <%= f.label "Chọn trình độ", class: "label", wrapper: false, required: true %>
+          <div class="control has-icons-left">
+            <span class="select is-fullwidth">
+              <%= f.input_field :job_education, required: true, collection: User::EDUCATION, prompt: "Trình độ:" %>
+            </span>
+            <span class="icon is-small is-left">
+              <i class="fa fa-graduation-cap"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <div class="columns">
       <div class="field column">

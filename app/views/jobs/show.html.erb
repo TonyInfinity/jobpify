@@ -7,8 +7,14 @@
     <p class="f7"><i class="fa fa-clock"></i> Được đăng vào ngày <%= @job.created_at.strftime("%d-%m-%Y") %></p>
     <h1 class="title is-2"><%= @job.title %></h1>
     <div class="panel">
-      <li class="inline-block f6 pr2"><span class="tag is-dark">Đại học</span></li>
-      <li class="inline-block f6 pr2"><%= job_type(@job.job_type) %></li>
+      <!--<li class="inline-block f6 pr2"><span class="tag is-dark">Đại học</span></li>
+      <li class="inline-block f6 pr2"><%= job_type(@job.job_type) %></li>-->
+      <li class="inline-block f6 pr2">
+        <div class="tags has-addons">
+            <%= job_education(@job.job_education) %>
+            <%= job_type(@job.job_type) %>
+            </div>
+      </li>
       <li class="inline-block f6 pr2"><i class="fa fa-calendar"></i> Hạn ứng tuyển: <%= @job.job_deadline.to_date %></li>
       <li class="inline-block f6 ph2"><i class="fa fa-map-marker"></i> Khu vực: <%= @job.location %></li>
        <li class="inline-block f6 ph2"><i class="fa fa-usd"></i> Lương: <%= @job.job_salary %></li>

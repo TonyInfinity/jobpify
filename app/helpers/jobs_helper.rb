@@ -15,6 +15,24 @@ module JobsHelper
             ""
         end
     end
+    
+    def job_education(job_education)
+        if job_education == "Trên đại học"
+            content_tag :span, "#{job_education}", class: "tag is-dark"
+        elsif job_education == "Đại học"
+            content_tag :span, "#{job_education}", class: "tag is-dark"
+        elsif job_education == "Cao đẳng"
+            content_tag :span, "#{job_education}", class: "tag is-dark"
+        elsif job_education == "Trung cấp"
+            content_tag :span, "#{job_education}", class: "tag is-dark"
+        elsif job_education == "Trung học"
+            content_tag :span, "#{job_education}", class: "tag is-dark"
+        elsif job_education == "Chứng chỉ nghề"
+            content_tag :span, "#{job_education}", class: "tag is-dark"
+        else
+            ""
+        end
+    end
 
     def job_author(job) 
         user_signed_in? && current_user.id == job.user_id

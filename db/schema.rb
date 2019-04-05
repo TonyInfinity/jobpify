@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190309151145) do
+ActiveRecord::Schema.define(version: 20190405135452) do
 
   create_table "conversations", force: :cascade do |t|
     t.integer  "sender_id"
@@ -44,13 +44,14 @@ ActiveRecord::Schema.define(version: 20190309151145) do
     t.string   "job_author"
     t.boolean  "remote_ok"
     t.string   "apply_url"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
     t.string   "avatar"
     t.integer  "user_id"
     t.datetime "job_deadline"
     t.string   "slug"
     t.string   "job_salary"
+    t.string   "job_education"
   end
 
   add_index "jobs", ["slug"], name: "index_jobs_on_slug", unique: true
