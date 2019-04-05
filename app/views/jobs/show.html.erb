@@ -146,22 +146,16 @@
 </div>
 <div class="modal" id="jobsModal">
   <div class="modal-background"></div>
-  <div class="modal-card">
-    <header class="modal-card-head">
-      <p class="modal-card-title">Các công việc của <%= @job.job_author %></p>
-      <button class="delete" aria-label="close" id="closeJobsModal"></button>
-    </header>
-    <section class="modal-card-body">
-       <% @jobs_by_same_author.each do |job| %>
+  <div class="modal-content">
+    <div class="card">
+     <% @jobs_by_same_author.each do |job| %>
         <div class="control">
-          <%= link_to job.title, job, class: "is-5" %>
+          <%= link_to job.title, job, class: "button is-text" %>
         </div>
         <% end %>
-      <p id="companyDescP"></p>
-    </section>
-    <footer class="modal-card-foot">
-    </footer>
   </div>
+  </div>
+  <button class="modal-close is-large" aria-label="close" id="closeJobsModal"></button>
 </div>
 <script type="text/javascript">
   $("#showModal").click(function() {
