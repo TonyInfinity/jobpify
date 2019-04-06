@@ -11,6 +11,8 @@ class JobsController < ApplicationController
       @jobs = Job.search(params[:search])
     elsif (params.has_key?(:job_salary))
       @jobs = Job.where(job_salary: params[:job_salary]).order("created_at desc")
+    elsif (params.has_key?(:job_education))
+      @jobs = Job.where(job_education: params[:job_education]).order("created_at desc")
     else
       @jobs = Job.all.order("created_at desc")
     end

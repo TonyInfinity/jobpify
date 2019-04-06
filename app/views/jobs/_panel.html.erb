@@ -20,12 +20,12 @@
     </span>
     Trình độ:
 </a>
-<%= link_to 'Trên đại học', jobs_path, class: "panel-block" %>
-<%= link_to 'Đại học', jobs_path, class: "panel-block" %>
-<%= link_to 'Cao đẳng', jobs_path, class: "panel-block" %>
-<%= link_to 'Trung cấp', jobs_path, class: "panel-block" %>
-<%= link_to 'Trung học', jobs_path, class: "panel-block" %>
-<%= link_to 'Chứng chỉ nghề', jobs_path, class: "panel-block" %>
+<%= link_to 'Trên đại học', jobs_path(job_education: "Trên đại học"), class: "panel-block" %>
+<%= link_to 'Đại học', jobs_path(job_education: "Đại học"), class: "panel-block" %>
+<%= link_to 'Cao đẳng', jobs_path(job_education: "Cao đẳng"), class: "panel-block" %>
+<%= link_to 'Trung cấp', jobs_path(job_education: "Trung cấp"), class: "panel-block" %>
+<%= link_to 'Trung học', jobs_path(job_education: "Trung học"), class: "panel-block" %>
+<%= link_to 'Chứng chỉ nghề',jobs_path(job_education: "Chứng chỉ nghề"), class: "panel-block" %>
 </nav>
 
 <div class="control has-icons-left">
