@@ -6,6 +6,7 @@
     <%= csrf_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' %>
+    <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Bungee' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', "https://js.stripe.com/v2/", "https://js.stripe.com/v3/", 'data-turbolinks-track': 'reload' %>
     <%= tag :meta, name: "stripe-public-key", content: Figaro.env.stripe_publishable_key %>
@@ -21,7 +22,7 @@
       <p class="alert"><%= alert %></p>
     </div>
     <% end %>
-     <nav class="navbar has-background-white" role="navigation" aria-label="main navigation" style="border-bottom:1px solid #D3D3D3">
+     <nav class="navbar has-background-white" role="navigation" aria-label="main navigation" style="border-bottom:2px solid #D3D3D3">
       <div class="navbar-brand">
         <!--<div class="navbar-item has-dropdown is-hoverable" style="border-right:1px solid #D3D3D3">
             <%= link_to root_path, class: "navbar-link" do %>
@@ -45,8 +46,10 @@
                   </a>
                 </div>
             </div>-->
-            <a class="navbar-item" style="border-right:1px solid #D3D3D3">
-              <h5 class="title is-5">Jobpify</h5>
+            
+            <a class="navbar-item" href="<%= root_path %>">
+              <!--<h5 class="title is-5">Jobpify</h5>-->
+              <img src="/images/j-logo.png" alt="rss feed" />
             </a>
       </div>
       <div id="navbar" class="navbar-menu">
@@ -82,7 +85,7 @@
                   Học sinh, sinh viên
                   </a>
           <div class="navbar-dropdown">
-                  <a class="navbar-item" href="/forum">
+                  <a class="navbar-item" href="/jobs">
                     <p>
                     <strong>Tìm việc làm</strong>
                     <br>
