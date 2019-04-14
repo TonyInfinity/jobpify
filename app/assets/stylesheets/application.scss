@@ -8,11 +8,8 @@
 h1 {
   font-family: 'Bungee', cursive;
 }
-.has-background-cloud {
-  background-color: hsl(0, 0%, 95%);
-}
-.has-background-ufogreen {
-  background-color: #44cf6c;
+h2, h3, h4, h5, h6, p, a, label, .control {
+  font-family: 'Roboto', sans-serif;
 }
 .notification {
   border-radius: 0;
@@ -83,4 +80,8 @@ textarea {
 .card {
   box-shadow: none;
   border: 1px solid #d3d3d3;
+  border-bottom: 2px solid #d3d3d3;
+}
+mark {
+  background-color: $warning;
 }
