@@ -90,24 +90,93 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-6">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                     <h1 class="title is-1 has-text-left">
                         Jobpify
                     </h1>
                     <h3 class="subtitle is-3 has-text-left">
                         Nền tảng kết nối <mark>học sinh, sinh viên</mark> với các cơ hội việc làm.
                     </h3>
-                    <a class="button is-medium is-link" href="/jobs">
+                    <!--<a class="button is-medium is-link" href="/jobs">
                             <strong>
                                 Tìm việc làm ngay!
                             </strong>
-                        </a>
-                    <span class="help">Hoặc đi đến trang <a href="users/sign_up">đăng ký</a> để tạo tài khoản</span>
+                    </a>-->
+                    <!--<span class="help">Hoặc đi đến trang <a href="users/sign_up">đăng ký</a> để tạo tài khoản</span>-->
                 </div>
-                <div class="column is-6">
-                    <img src="/images/fow.png" alt="rss feed" />
+                <div class="column is-6" style="">
+                    <img align="right" src="/images/home-banner-img.png" width="75%" alt="rss feed" />
                 </div>
+                
             </div>
-
+                <form class="field has-addons has-addons-centered">
+                      <div class="control has-icons-left has-icons-right search-field">
+                          <input class="input is-large is-fullwidth is-hovered" id="search-box" size="100" type="text" placeholder="Tìm theo tên công việc" name="search" v-model="search" /><span class="icon is-medium is-left"><i class="fa fa-search"></i></span>                  
+                      </div>
+                      <p class="control">
+                        <span class="select is-large is-hovered">
+                          <select>
+                            <option value="28" selected>Bất kỳ
+                            </option><option value="29">
+                                Bán lẻ
+                              </option><option value="30">
+                                Bất động sản
+                              </option><option value="22">
+                                Blockchain
+                              </option><option value="31">
+                                Chứng khoán
+                              </option><option value="19">
+                                Công Nghệ
+                              </option><option value="38">
+                                Dịch thuật
+                              </option><option value="10">
+                                Dịch Vụ
+                              </option><option value="37">
+                                Du lịch/Nhà hàng/Khách sạn
+                              </option><option value="39">
+                                Giải trí
+                              </option><option value="18">
+                                Giáo Dục
+                              </option><option value="33">
+                                Hành chính/Thư ký/Trợ lý
+                              </option><option value="41">
+                                IT
+                              </option><option value="34">
+                                Kế toán/Kiểm toán
+                              </option><option value="49">
+                                Khác
+                              </option><option value="17">
+                                Kinh Doanh
+                              </option><option value="43">
+                                Ngân hàng
+                              </option><option value="40">
+                                Nghệ thuật
+                              </option><option value="44">
+                                Nhân sự
+                              </option><option value="35">
+                                Quảng cáo/Marketing/PR
+                              </option><option value="36">
+                                Sinh viên/Mới tốt nghiệp/Thực tập
+                              </option><option value="21">
+                                Startup
+                              </option><option value="42">
+                                Tài chính
+                              </option><option value="32">
+                                Thiết kế
+                              </option><option value="47">
+                                Thời trang/Mỹ phẩm/Trang sức
+                              </option><option value="46">
+                                Thương mại điện tử
+                              </option><option value="45">
+                                Tư vấn
+                              </option>
+                          </select>
+                        </span>
+                      </p>
+                </form>
         </div>
     </div>
 </section>

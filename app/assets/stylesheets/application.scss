@@ -5,6 +5,9 @@
 @import "jobs";
 @import "stripe";
 
+body {
+  background-color: #f8f8f8;
+}
 h1 {
   font-family: 'Bungee', cursive;
 }
@@ -37,6 +40,8 @@ h2, h3, h4, h5, h6, p, a, label, .control {
 }
 .input {
   border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 0px;
 }
 .box {
   border-radius: 0;
@@ -84,4 +89,7 @@ textarea {
 }
 mark {
   background-color: $warning;
+}
+.select {
+  border-radius: 0;
 }
