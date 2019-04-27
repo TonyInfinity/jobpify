@@ -1,90 +1,3 @@
-<!--<section class="hero is-medium"> 
-<div class="hero-body has-background-white"> 
-<div class="container has-text-centered"> 
-<div class="column is-6 is-offset-3"> 
-<img src="/images/logotransparent.png" alt="rss feed" width="240" height="240"/> 
-<p class="subtitle is-3"> Nền tảng kết nối học sinh, sinh viên với các cơ hội việc làm. </p
-><a class="button is-large is-fullwidth" href="/jobs/">Tìm việc làm cùng Jobpify</a> 
-<br>
-<p class="subtitle is-6">Hoặc đi đến trang <a href="users/sign_up/">đăng ký</a> để tạo tài khoản</p>
-</div>
-</div>
-</div>
-</section>
-<section class"container"> 
-<div class="hero-body has-background-white"> 
-<div class="columns features"> 
-<div class="column is-4"> 
-<div class="card is-shady"> 
-<div class="card-content"> 
-<div class="content"> 
-<h4>Giao diện tối giản và thân thiện.</h4>
-<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="column is-4"> 
-<div class="card is-shady"> 
-<div class="card-content"> 
-<div class="content"> 
-<h4>Trình soạn thảo trực tuyến hiện đại.</h4>
-<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="column is-4"> 
-<div class="card is-shady"> 
-<div class="card-content"> 
-<div class="content"> 
-<h4>Nhiều dịch vụ bổ trợ.</h4>
-<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="columns features"> 
-<div class="column is-4"> 
-<div class="card is-shady"> 
-<div class="card-content"> 
-<div class="content"> 
-<h4>Tối ưu hóa quá trình tuyển dụng.</h4> 
-<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="column is-4"> 
-<div class="card is-shady"> 
-<div class="card-content"> 
-<div class="content"> 
-<h4>Nhanh chóng tìm được việc làm.</h4> 
-<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="column is-4"> 
-<div class="card is-shady"> 
-<div class="card-content"> 
-<div class="content"> 
-<h4>Hoàn toàn miễn phí.</h4> 
-<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<br>
-<div class="intro column is-8 is-offset-2 has-text-centered"> 
-<h3 class="title is-3">Hoàn hảo dành cho học sinh, sinh viên đang tìm kiếm việc làm.</h3>
-<p class="subtitle is-5">Blah blah blah blah blah blah blah blah blah blah blah. Blah blah blah blah blah blah blah blah blah blah blah blah blah blah.</p>
-</div>
-<br>
-</div>
-</section>-->
 <section class="hero">
     <div class="hero-body">
         <div class="container">
@@ -117,9 +30,9 @@
                           <input class="input is-large is-fullwidth is-hovered" id="search-box" size="100" type="text" placeholder="Tìm theo tên công việc" name="search" v-model="search" /><span class="icon is-medium is-left"><i class="fa fa-search"></i></span>                  
                       </div>
                       <p class="control">
-                        <span class="select is-large is-hovered">
-                          <select>
-                            <option value="28" selected>Bất kỳ
+                        <span class="select is-large">
+                          <select class="is-hovered">
+                            <option value="28" selected disabled>Nhóm ngành
                             </option><option value="29">
                                 Bán lẻ
                               </option><option value="30">
@@ -176,36 +89,133 @@
                           </select>
                         </span>
                       </p>
+                      <p class="control">
+                        <span class="select is-large">
+                          <select class="is-hovered">
+                              <option selected disabled>Khu vực</option>
+                              <option value="?location=An+Giang">An Giang</option>
+                                <option value="?location=Bà+Rịa+Vũng+Tàu">Bà Rịa Vũng Tàu</option>
+                                <option value="?location=Bạc+Liêu">Bạc Liêu</option>
+                                <option value="?location=Bắc+Giang">Bắc Giang</option>
+                                <option value="?location=Bắc+Kạn">Bắc Kạn</option>
+                                <option value="?location=Bắc+Ninh">Bắc Ninh</option>
+                                <option value="?location=Bến+Tre">Bến Tre</option>
+                                <option value="?location=Bình+Định">Bình Định</option>
+                                <option value="?location=Bình+Dương">Bình Dương</option>
+                                <option value="?location=Bình+Phước">Bình Phước</option>
+                                <option value="?location=Bình+Thuận">Bình Thuận</option>
+                                <option value="?location=Cà+Mau">Cà Mau</option>
+                                <option value="?location=Cao+Bằng">Cao Bằng</option>
+                                <option value="?location=Đắk+Lắk">Đắk Lắk</option>
+                                <option value="?location=Đắk+Nông">Đắk Nông</option>
+                                <option value="?location=Điện+Biên">Điện Biên</option>
+                                <option value="?location=Đồng+Nai">Đồng Nai</option>
+                                <option value="?location=Đồng+Tháp">Đồng Tháp</option>
+                                <option value="?location=Gia+Lai">Gia Lai</option>
+                                <option value="?location=Hà+Giang">Hà Giang</option>
+                                <option value="?location=Hà+Nam">Hà Nam</option>
+                                <option value="?location=Hà+Tĩnh">Hà Tĩnh</option>
+                                <option value="?location=Hải+Dương">Hải Dương</option>
+                                <option value="?location=Hậu+Giang">Hậu Giang</option>
+                                <option value="?location=Hòa+Bình">Hòa Bình</option>
+                                <option value="?location=Hưng+Yên">Hưng yên</option>
+                                <option value="?location=Khánh+Hòa">Khánh Hòa</option>
+                                <option value="?location=Kiên+Giang">Kiên Giang</option>
+                                <option value="?location=Kon+Tum">Kon Tum</option>
+                                <option value="?location=Lai+Châu">Lai Châu</option>
+                                <option value="?location=Lâm+Đồng">Lâm Đồng</option>
+                                <option value="?location=Lạng+Sơn">Lạng Sơn</option>
+                                <option value="?location=Lào+Cai">Lào Cai</option>
+                                <option value="?location=Long+An">Long An</option>
+                                <option value="?location=Nam+Định">Nam Định</option>
+                                <option value="?location=Nghệ+An">Nghệ An</option>
+                                <option value="?location=Ninh+Bình">Ninh Bình</option>
+                                <option value="?location=Ninh+Thuận">Ninh Thuận</option>
+                                <option value="?location=Phú+Thọ">Phú Thọ</option>
+                                <option value="?location=Quảng+Bình">Quảng Bình</option>
+                                <option value="?location=Quảng+Nam">Quảng Nam</option>
+                                <option value="?location=Quảng+Ngãi">Quãng Ngãi</option>
+                                <option value="?location=Quảng+Ninh">Quảng Ninh</option>
+                                <option value="?location=Quảng+Trị">Quảng Trị</option>
+                                <option value="?location=Sóc+Trăng">Sóc Trăng</option>
+                                <option value="?location=Sơn+La">Sơn La</option>
+                                <option value="?location=Tây+Ninh">Tây Ninh</option>
+                                <option value="?location=Thái+Bình">Thái Bình</option>
+                                <option value="?location=Thái+Nguyên">Thái Nguyên</option>
+                                <option value="?location=Thanh+Hóa">Thanh Hóa</option>
+                                <option value="?location=Thừa+Thiên+Huế">Thừa Thiên Huế</option>
+                                <option value="?location=Tiền+Giang">Tiền Giang</option>
+                                <option value="?location=Trà+Vinh">Trà Vinh</option>
+                                <option value="?location=Tuyên+Quang">Tuyên Quang</option>
+                                <option value="?location=Vĩnh+Long">Vĩnh Long</option>
+                                <option value="?location=Vĩnh+Phúc">Vĩnh Phúc</option>
+                                <option value="?location=Yên+Bái">Yên Bái</option>
+                                <option value="?location=Phú+Yên">Phú Yên</option>
+                                <option value="?location=Cần+Thơ">Cần Thơ</option>
+                                <option value="?location=Đà+Nẵng">Đà Nẵng</option>
+                                <option value="?location=Hà+Nội">Hà Nội</option>
+                                <option value="?location=Hải+Phòng">Hải Phòng</option>
+                                <option value="?location=Hồ+Chí+Minh">Hồ Chí Minh</option>
+                            </select>
+                            </span>
+                            </p>
                 </form>
+                <ul id="icons-ul" class="has-text-centered">
+                <li id="icons-li" class="item">
+                  <div class="icon">
+                    <svg data-v-b12e8260="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code"><polyline data-v-b12e8260="" points="16 18 22 12 16 6"></polyline><polyline data-v-b12e8260="" points="8 6 2 12 8 18"></polyline></svg>
+                    <div class="blind"></div>
+                  </div>
+                </li>
+                <li id="icons-li" class="item">
+                  <div class="icon">
+                    <svg data-v-b12e8260="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line data-v-b12e8260="" x1="22" y1="2" x2="11" y2="13"></line><polygon data-v-b12e8260="" points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    <div class="blind"></div>
+                  </div>
+                  
+                </li>
+                <li id="icons-li" class="item">
+                  <div class="icon">
+                    <svg data-v-b12e8260="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path data-v-b12e8260="" d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line data-v-b12e8260="" x1="3" y1="6" x2="21" y2="6"></line><path data-v-b12e8260="" d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    <div class="blind"></div>
+                  </div>
+                </li>
+                <li id="icons-li" class="item">
+                  <div class="icon">
+                    <svg data-v-b12e8260="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up"><polyline data-v-b12e8260="" points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline data-v-b12e8260="" points="17 6 23 6 23 12"></polyline></svg>
+                    <div class="blind"></div>
+                  </div>
+                </li>
+                <li id="icons-li" class="item">
+                  <div class="icon">
+                    <svg data-v-b12e8260="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book-open"><path data-v-b12e8260="" d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path data-v-b12e8260="" d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                    <div class="blind"></div>
+                  </div>
+                </li>
+                <li id="icons-li" class="item">
+                  <div class="icon">
+                    <svg data-v-b12e8260="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle data-v-b12e8260="" cx="12" cy="12" r="5"></circle><line data-v-b12e8260="" x1="12" y1="1" x2="12" y2="3"></line><line data-v-b12e8260="" x1="12" y1="21" x2="12" y2="23"></line><line data-v-b12e8260="" x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line data-v-b12e8260="" x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line data-v-b12e8260="" x1="1" y1="12" x2="3" y2="12"></line><line data-v-b12e8260="" x1="21" y1="12" x2="23" y2="12"></line><line data-v-b12e8260="" x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line data-v-b12e8260="" x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <div class="blind"></div>
+                  </div>
+                </li>
+                <li id="icons-li" class="item">
+                  <div class="icon">
+                    <svg data-v-b12e8260="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path data-v-b12e8260="" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle data-v-b12e8260="" cx="9" cy="7" r="4"></circle><path data-v-b12e8260="" d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path data-v-b12e8260="" d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    <div class="blind"></div>
+                  </div>
+                </li>
+                <li id="icons-li" class="item">
+                  <div class="icon">
+                    <svg data-v-b12e8260="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle data-v-b12e8260="" cx="12" cy="12" r="1"></circle><circle data-v-b12e8260="" cx="19" cy="12" r="1"></circle><circle data-v-b12e8260="" cx="5" cy="12" r="1"></circle></svg>
+                    <div class="blind"></div>
+                  </div>
+                </li>
+                </ul>
         </div>
     </div>
 </section>
 
-<section class="hero is-link is-bold">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-5 is-offset-1">
-                    <img src="/images/stu.png" alt="rss feed" width="65%" />
-                </div>
-                <div class="column is-5">
-                    <h3 class="title is-3">
-                        Bạn là học sinh, sinh viên và đang tìm kiếm việc làm?
-                    </h3>
-                    <p></p>
-                    <h4 class="subtitle is-4">
-                        Jobpify là nơi hoản hảo cho bạn. Là nền tảng được xây dựng với mục đích giúp học sinh, sinh viên nhanh chóng tìm được việc làm
-                        từ các nhà tuyển dụng lớn nhỏ khắp cả nước.
-                        
-                    </h4>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<div class="section" id="pricing" style="color: black; margin-top: -20px; border-bottom: 1px solid lightgrey;">
+<!--<div class="section" id="pricing" style="color: black; margin-top: -20px; border-bottom: 1px solid lightgrey;">
     <div class="container">
        <h3 class="title is-3 has-text-centered">
             Tài khoản
@@ -386,7 +396,7 @@
 
         </div>
     </div>
-</div>
+</div>-->
 
 
 <section class"container"> 
@@ -455,11 +465,34 @@
 </div>
 </div>
 </div>
-<br>
+<!--<br>
 <div class="intro column is-8 is-offset-2 has-text-centered"> 
 <h3 class="title is-3">Hoàn hảo dành cho học sinh, sinh viên đang tìm kiếm việc làm.</h3>
 <p class="subtitle is-5">Blah blah blah blah blah blah blah blah blah blah blah. Blah blah blah blah blah blah blah blah blah blah blah blah blah blah.</p>
 </div>
-<br>
+<br>-->
 </div>
+</section>
+
+<section class="hero is-bold">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-5 is-offset-1">
+                    <img src="/images/stu.png" alt="rss feed" width="65%" />
+                </div>
+                <div class="column is-5">
+                    <h3 class="title is-3">
+                        Bạn là học sinh, sinh viên và đang tìm kiếm việc làm?
+                    </h3>
+                    <p></p>
+                    <h4 class="subtitle is-4">
+                        Jobpify là nơi hoản hảo cho bạn. Là nền tảng được xây dựng với mục đích giúp học sinh, sinh viên nhanh chóng tìm được việc làm
+                        từ các nhà tuyển dụng lớn nhỏ khắp cả nước.
+                        
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>

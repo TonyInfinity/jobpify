@@ -6,6 +6,9 @@
 @import "stripe";
 
 body {
+  //background-color: #f8f8f8;
+}
+.has-background-f8 {
   background-color: #f8f8f8;
 }
 h1 {
@@ -90,6 +93,61 @@ textarea {
 mark {
   background-color: $warning;
 }
-.select {
+.select select {
+  cursor: default;
+  width: 300px;
   border-radius: 0;
 }
+
+/* Icon Buttons */
+ul#icons-ul {
+  margin: 50px 0 0;
+  padding: 0;
+}
+li#icons-li {
+  cursor: pointer;
+  list-style: none;
+  display: inline;
+  margin: 0 75px 0 0;
+  padding: 0;
+}
+ul#icons-ul li#icons-li .icon {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    margin: 0 auto;
+}
+ul#icons-ul li#icons-li .icon svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    color: #4f4f4f;
+}
+ul#icons-ul li#icons-li:hover .icon svg {
+  color: #fff;
+}
+ul#icons-ul li#icons-li .blind {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: #173b66;
+  opacity: 0;
+  mix-blend-mode: color;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+ul#icons-ul li#icons-li:hover .blind {
+    opacity: 1;
+    width: 100px;
+    height: 100px;
+}
+/* Icon Buttons */
