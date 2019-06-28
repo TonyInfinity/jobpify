@@ -71,7 +71,7 @@ class JobsController < ApplicationController
         format.html { redirect_to @job, notice: 'Bạn đã đăng đăng tin tuyển dụng hoàn tất, công việc của bạn sẽ được hiện thị trên trang chủ của Yayber.' }
         format.json { render :show, status: :created, location: @job }
       else
-        flash.alert = @job.errrors.full_messages.join(', ')
+        flash.alert = @job.errors.full_messages.join(', ')
         format.html { render :new }
         format.json { render json: @job.errors, status: :unprocessable_entity }
       end

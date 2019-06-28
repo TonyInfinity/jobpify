@@ -108,8 +108,19 @@ li#icons-li {
   cursor: pointer;
   list-style: none;
   display: inline;
-  margin: 0 75px 0 0;
+  margin: 0 85px 0 0;
   padding: 0;
+}
+ul#icons-ul li#icons-li:hover .text {
+  opacity: 0;
+}
+ul#icons-ul li#icons-li .text {
+  white-space: nowrap;
+  margin-top: 85px;
+    color: #4f4f4f;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    opacity: 1;
 }
 ul#icons-ul li#icons-li .icon {
     width: 48px;

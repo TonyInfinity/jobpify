@@ -21,13 +21,13 @@
                     <!--<span class="help">Hoặc đi đến trang <a href="users/sign_up">đăng ký</a> để tạo tài khoản</span>-->
                 </div>
                 <div class="column is-6" style="">
-                    <img align="right" src="/images/home-banner-img.png" width="75%" alt="rss feed" />
+                    <img align="right" src="/images/bappo-social-dna.png" width="70%" alt="rss feed" />
                 </div>
                 
             </div>
-                <form class="field has-addons has-addons-centered">
+                <form method="post" class="field has-addons has-addons-centered">
                       <div class="control has-icons-left has-icons-right search-field">
-                          <input class="input is-large is-fullwidth is-hovered" id="search-box" size="100" type="text" placeholder="Tìm theo tên công việc" name="search" v-model="search" /><span class="icon is-medium is-left"><i class="fa fa-search"></i></span>                  
+                          <input class="input is-large is-fullwidth is-hovered" id="search" size="100" type="text" placeholder="Công việc bạn đang tìm kiếm" name="search" v-model="search" /><span class="icon is-medium is-left"><i class="fa fa-search"></i></span>                  
                       </div>
                       <p class="control">
                         <span class="select is-large">
@@ -164,12 +164,15 @@
                 <li id="icons-li" class="item">
                   <div class="icon">
                     <svg data-v-b12e8260="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code"><polyline data-v-b12e8260="" points="16 18 22 12 16 6"></polyline><polyline data-v-b12e8260="" points="8 6 2 12 8 18"></polyline></svg>
+                    <div class="text">IT</div>
                     <div class="blind"></div>
                   </div>
+                  
                 </li>
                 <li id="icons-li" class="item">
                   <div class="icon">
                     <svg data-v-b12e8260="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line data-v-b12e8260="" x1="22" y1="2" x2="11" y2="13"></line><polygon data-v-b12e8260="" points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    <div class="text">Marketing</div>
                     <div class="blind"></div>
                   </div>
                   
@@ -177,36 +180,42 @@
                 <li id="icons-li" class="item">
                   <div class="icon">
                     <svg data-v-b12e8260="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path data-v-b12e8260="" d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line data-v-b12e8260="" x1="3" y1="6" x2="21" y2="6"></line><path data-v-b12e8260="" d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    <div class="text">Bán lẻ</div>
                     <div class="blind"></div>
                   </div>
                 </li>
                 <li id="icons-li" class="item">
                   <div class="icon">
                     <svg data-v-b12e8260="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up"><polyline data-v-b12e8260="" points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline data-v-b12e8260="" points="17 6 23 6 23 12"></polyline></svg>
+                    <div class="text">Tài chính</div>
                     <div class="blind"></div>
                   </div>
                 </li>
                 <li id="icons-li" class="item">
                   <div class="icon">
                     <svg data-v-b12e8260="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book-open"><path data-v-b12e8260="" d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path data-v-b12e8260="" d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                    <div class="text">Giáo dục</div>
                     <div class="blind"></div>
                   </div>
                 </li>
                 <li id="icons-li" class="item">
                   <div class="icon">
                     <svg data-v-b12e8260="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle data-v-b12e8260="" cx="12" cy="12" r="5"></circle><line data-v-b12e8260="" x1="12" y1="1" x2="12" y2="3"></line><line data-v-b12e8260="" x1="12" y1="21" x2="12" y2="23"></line><line data-v-b12e8260="" x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line data-v-b12e8260="" x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line data-v-b12e8260="" x1="1" y1="12" x2="3" y2="12"></line><line data-v-b12e8260="" x1="21" y1="12" x2="23" y2="12"></line><line data-v-b12e8260="" x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line data-v-b12e8260="" x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <div class="text">Thiết kế</div>
                     <div class="blind"></div>
                   </div>
                 </li>
                 <li id="icons-li" class="item">
                   <div class="icon">
                     <svg data-v-b12e8260="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path data-v-b12e8260="" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle data-v-b12e8260="" cx="9" cy="7" r="4"></circle><path data-v-b12e8260="" d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path data-v-b12e8260="" d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    <div class="text">Nhân sự</div>
                     <div class="blind"></div>
                   </div>
                 </li>
                 <li id="icons-li" class="item">
                   <div class="icon">
                     <svg data-v-b12e8260="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle data-v-b12e8260="" cx="12" cy="12" r="1"></circle><circle data-v-b12e8260="" cx="19" cy="12" r="1"></circle><circle data-v-b12e8260="" cx="5" cy="12" r="1"></circle></svg>
+                    <div class="text">Xem thêm</div>
                     <div class="blind"></div>
                   </div>
                 </li>
@@ -479,7 +488,7 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-5 is-offset-1">
-                    <img src="/images/stu.png" alt="rss feed" width="65%" />
+                    <img src="/images/student-cartoon-png-5.png" alt="rss feed" width="65%" />
                 </div>
                 <div class="column is-5">
                     <h3 class="title is-3">
